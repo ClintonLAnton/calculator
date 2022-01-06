@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    /*background-color: #DCFFFB*/
+    background-color: #CAF7E3;
+}
+
+.calc_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    border: solid;
+    border-color: #e4bad4;
+    padding: 20px;
+    background-color: #f8eded;
+    border-radius: 30px;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+#input_text {
+    text-align: right;
+    grid-column: span 4;
+    height: 50px;
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    background-color: #F6Dfeb;
+    border: none;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    background-color: #F6Dfeb;
+}
+
+.calculator :nth-child(2) {
+    grid-column: span 2;
+    border-radius: 50px;
+    background-color: #e4bad4;
+}
+
+.calculator :nth-child(19) {
+    grid-column: span 2;
+    border-radius: 50px;
+    background-color: #e4bad4;
+}
+
+
